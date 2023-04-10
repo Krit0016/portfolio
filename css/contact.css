@@ -131,9 +131,10 @@ h3 {
     border-color: #555;
 }
 
-.submit-btn {
+.btn-primary {
     background-color: var(--bs-secondary);
     color: black;
+    border: 2px solid var(--bs-secondary);
     padding: 10px 50px;
     font-size: 1.2rem;
     font-weight: bolder;
@@ -144,8 +145,8 @@ h3 {
     margin-bottom: 2.5em;
 }
 
-.submit-btn:hover, 
-.submit-btn:active { /* Use these classes to apply styles on hover and click */
+.btn-primary:hover, 
+.btn-primary:active { /* Use these classes to apply styles on hover and click */
     background-color: var(--bs-secondary);
     color: black;
     border: 2px solid black;

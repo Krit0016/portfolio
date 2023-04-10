@@ -296,6 +296,12 @@ h4 {
     box-shadow: none;
 }
 
+lottie-player {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 /* ==================== Footer ==================== */
 
 .fbg-image {
