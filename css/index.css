@@ -1,0 +1,195 @@
+:root {
+    --bs-primary: #5A7830;
+    --bs-secondary: #FFC0CB;
+    --bs-success: #EBA83F;
+    --bs-info: #B9E3F3;
+    --bs-dark: #00594F;
+  }
+  
+body {
+    font-family: 'Poppins', sans-serif;
+}
+  
+h1, h2 {
+    font-family: 'Averia Serif Libre', cursive;
+}
+  
+.skip-links a {
+    background: var(--bs-primary);
+    color:white;
+    height: 2em;
+    left: 50%;
+    padding: 8px;
+    position: absolute;
+    transform: translateY(-150%);
+    /* transition: transform 0.3s; */
+    text-decoration: none;
+    font-size: 1.2em;
+}
+  
+.skip-links a:focus {
+    transform: translateY(0%);
+}
+  
+/* ==================== Navigation Bar ==================== */
+  
+.navbar-nav li {
+    margin-right: 15px; 
+}
+  
+/* Nav link styles */
+.navbar-nav .nav-link,
+.navbar-nav .nav-link:visited {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    transition: border-bottom 0.2s ease-in-out;
+}
+  
+/* Nav link hover styles */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:active {
+    color: white;
+    border-bottom: 2px solid white;
+}
+  
+/* Active nav link styles */
+.navbar-nav .nav-link.active {
+    color: white;
+    border-bottom: 2px solid white;
+}
+  
+/* Style contact button */
+.btn {
+    background-color: var(--bs-primary);
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    outline: none; /* Remove outline */
+    transition: background-color 0.1s ease-in-out;
+    cursor: pointer;
+}
+  
+.btn:hover, 
+.btn:active { /* Use these classes to apply styles on hover and click */
+    background-color: white;
+    color: var(--bs-primary);
+    text-decoration: none;
+    box-shadow: none;
+}
+  
+/* ==================== Background image ==================== */
+  
+.cloud-bg {
+    background-image: url(../images/background/cloud-bg.png);
+    background-size: cover;
+    background-position: center center;
+    /* padding-top: 20px; */
+    height: 100vh;
+    position: relative;
+}
+  
+  
+/* ==================== Home content ==================== */
+  
+h1 {
+    margin-top: 50px;
+}
+  
+p {
+    font-family: 'Averia Serif Libre', cursive;
+    font-size: 1.5rem;
+}
+  
+.main-button {
+    background-color: transparent;
+    color: white;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    border: 1px solid white; 
+    outline: 1px solid white; 
+    transition: background-color 0.1s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 12px;
+}
+  
+.main-button:hover {
+    background-color: white;
+    color: var(--bs-primary);
+}
+  
+.main-button:active {
+    background-color: white;
+    color: var(--bs-primary);
+}
+  
+.main-button {
+    animation: bounce-in-bottom 1.1s both;
+}
+  
+  
+@keyframes bounce-in-bottom {
+    0% {
+    -webkit-transform: translateY(500px);
+      transform: translateY(500px);
+    -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+      opacity: 0;
+    }
+  
+    38% {
+    -webkit-transform: translateY(0);
+      transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+      opacity: 1;
+    }
+  
+    55% {
+    -webkit-transform: translateY(65px);
+      transform: translateY(65px);
+    -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+  
+    72% {
+    -webkit-transform: translateY(0);
+      transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+  
+    81% {
+    -webkit-transform: translateY(28px);
+      transform: translateY(28px);
+    -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+  
+    90% {
+    -webkit-transform: translateY(0);
+      transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+  
+    95% {
+    -webkit-transform: translateY(8px);
+      transform: translateY(8px);
+    -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+  
+    100% {
+    -webkit-transform: translateY(0);
+      transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+}
+  
+  
+  

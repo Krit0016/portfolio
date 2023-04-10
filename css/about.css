@@ -1,0 +1,365 @@
+:root {
+    --bs-primary: #5A7830;
+    --bs-secondary: #FFC0CB;
+    --bs-success: #EBA83F;
+    --bs-info: #B9E3F3;
+    --bs-dark: #00594F;
+}
+  
+body {
+    font-family: 'Poppins', sans-serif;
+    /* background: linear-gradient(to bottom, #ffffff, #d5edf8, #b9e3f3, #b9e3f3, #ffffff); */
+    
+
+}
+  
+h1, h2 {
+    font-family: 'Averia Serif Libre', cursive;
+}
+
+h3,
+h4,
+h5 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+  
+.skip-links a {
+    background: var(--bs-primary);
+    color:white;
+    height: 2em;
+    left: 50%;
+    padding: 8px;
+    position: absolute;
+    transform: translateY(-150%);
+    /* transition: transform 0.1s; */
+    text-decoration: none;
+    font-size: 1.2em;
+}
+  
+.skip-links a:focus {
+    transform: translateY(0%);
+}
+  
+/* ==================== Navigation Bar ==================== */
+  
+.navbar-nav li {
+    margin-right: 15px; 
+}
+  
+/* Nav link styles */
+.navbar-nav .nav-link,
+.navbar-nav .nav-link:visited {
+    color: var(--bs-primary);
+    font-size: 1.2rem;
+    font-weight: bolder;
+    transition: border-bottom 0.2s ease-in-out;
+}
+  
+/* Nav link hover styles */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:active {
+    color: var(--bs-primary);
+    border-bottom: 2px solid var(--bs-primary);
+}
+  
+/* Active nav link styles */
+.navbar-nav .nav-link.active {
+    color: var(--bs-primary);
+    border-bottom: 2px solid var(--bs-primary);
+}
+
+  
+/* Style contact button */
+.btn {
+    background-color: var(--bs-primary);
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    outline: none; /* Remove outline */
+    transition: background-color 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.btn:hover, 
+.btn:active { /* Use these classes to apply styles on hover and click */
+    background-color: var(--bs-success);
+    color: white;
+    text-decoration: none;
+    box-shadow: none;
+}
+  
+
+/* ==================== About me intro ==================== */
+h1 {
+    color: var(--bs-primary);
+    animation: wobble-ver-left 0.8s both;
+}
+
+@keyframes wobble-ver-left {
+    0%,
+    100% {
+      -webkit-transform: translateY(0) rotate(0);
+              transform: translateY(0) rotate(0);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+    }
+    15% {
+      -webkit-transform: translateY(-30px) rotate(-6deg);
+              transform: translateY(-30px) rotate(-6deg);
+    }
+    30% {
+      -webkit-transform: translateY(15px) rotate(6deg);
+              transform: translateY(15px) rotate(6deg);
+    }
+    45% {
+      -webkit-transform: translateY(-15px) rotate(-3.6deg);
+              transform: translateY(-15px) rotate(-3.6deg);
+    }
+    60% {
+      -webkit-transform: translateY(9px) rotate(2.4deg);
+              transform: translateY(9px) rotate(2.4deg);
+    }
+    75% {
+      -webkit-transform: translateY(-6px) rotate(-1.2deg);
+              transform: translateY(-6px) rotate(-1.2deg);
+    }
+}
+
+blockquote {
+    color:  var(--bs-primary);
+    font-family: 'Averia Serif Libre', cursive;
+    font-size: 1.5rem;
+}
+
+.me-img-top {
+    max-height: 100%;
+    max-width: 50%;
+    border-width: 5px;
+    border-color: var(--bs-primary);
+    box-shadow: 5px 5px 5px #888888;
+    border-radius: 15px;
+}
+
+.me-img-top {
+    animation: fade-in-right 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+  
+@keyframes fade-in-right {
+    0% {
+      -webkit-transform: translateX(50px);
+              transform: translateX(50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+}
+
+/* ==================== About me - education ==================== */
+
+.flower-img-edu {
+    border-radius: 30px;
+    margin-top: 50px;
+}
+
+.flower-img-edu {
+    animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+}
+
+h2 {
+    color: var(--bs-primary);
+} 
+
+/* ==================== About me - experiences ==================== */
+
+.experiences {
+    margin: 0 auto;
+    max-width: 960px; /* or any other maximum width you prefer */
+}
+
+/* ==================== About me - skill & tool ==================== */
+
+.col-md-3 {
+    margin: 0 auto;
+    max-width: 960px; /* or any other maximum width you prefer */
+}
+
+.skillntool li {
+    text-indent: 2em;
+}
+
+/* ==================== About me - resume ==================== */
+
+.btn-resume {
+    background-color: var(--bs-secondary);
+    color: black;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    outline: none; /* Remove outline */
+    transition: background-color 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-resume:hover, 
+.btn-reume:active { /* Use these classes to apply styles on hover and click */
+    background-color: var(--bs-secondary);
+    color: black;
+    border: 2px solid black;
+    text-decoration: none;
+}
+
+/* ==================== About me - contact ==================== */
+
+.contact-img {
+    border-radius: 240px;
+    margin-top: 50px;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+h4 {
+    margin-top: 50px;
+    font-size: 80px;
+    font-family: 'Averia Serif Libre', cursive;
+    color: var(--bs-dark);
+}
+
+h4 {
+    animation: jello-horizontal 0.9s both;
+}
+
+@keyframes jello-horizontal {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+    30% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+              transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+              transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(1.15, 0.85, 1);
+              transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+              transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+              transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+}
+
+.btn-contact {
+    background-color: var(--bs-dark);
+    color: white;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    outline: none; /* Remove outline */
+    transition: background-color 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-contact:hover, 
+.btn-contact:active { /* Use these classes to apply styles on hover and click */
+    background-color: var(--bs-success);
+    color: white;
+    text-decoration: none;
+    box-shadow: none;
+}
+
+/* ==================== Footer ==================== */
+
+.fbg-image {
+    background-image: url(../images/background/footer.png);
+    background-position: center;
+    background-size: cover;
+    margin-top: 8rem;
+}
+  
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+}
+
+@media (max-width: 767px) {
+    .social-icons {
+      justify-content: center;
+      margin-top: 80px;
+    }
+}
+  
+  
+.social-icons li {
+    margin-right: 10px;
+    margin-top: 50px;
+}
+  
+.social-icons li:last-child {
+    margin-right: 0;
+}
+  
+.social-icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+  
+.social-icons a:hover {
+    opacity: 0.8;
+}
+  
+.text-md-end {
+    margin-top: 50px;
+}
+
+@media (max-width: 767px) {
+    .text-md-end {
+      text-align: center !important;
+      margin-top: 10px;
+    }
+    
+}
+  
+  
+  
+
+
+
+
+  
