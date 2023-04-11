@@ -13,6 +13,7 @@ During development, I faced a few challenges such as:
 
 - **Learning Bootstrap Framework:** I had to spend some time learning how to use Bootstrap effectively to ensure a responsive and visually appealing design.
 - **Meeting Accessibility Standards:** I realized at some point that I had missed out on some accessibility standards, so I had to go back and make necessary changes.
+- **Creating a contact form that sends emails directly to my inbox:** I had to learn how to use PHP to create a contact form that sends emails directly to my email.
 
 ## Lessons Learned
 Through creating this web portfolio, I have learned the importance of:
