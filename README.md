@@ -8,19 +8,19 @@ This portfolio website was created as a showcase of my skills, projects, and exp
 - **Image Organization:** I filled the images folder with all the planned pictures and organized them into folders. I also formatted the images into minimum two sizes for optimal loading time and display.
 - **Coding for General Style:** I created the general style of the website using HTML, CSS, and Bootstrap framework.
 
-##Challenges
+## Challenges
 During development, I faced a few challenges such as:
 
 - **Learning Bootstrap Framework:** I had to spend some time learning how to use Bootstrap effectively to ensure a responsive and visually appealing design.
 - **Meeting Accessibility Standards:** I realized at some point that I had missed out on some accessibility standards, so I had to go back and make necessary changes.
 
-##Lessons Learned
+## Lessons Learned
 Through creating this web portfolio, I have learned the importance of:
 
 - **Planning and Organization:** Having a plan and an organized folder structure is crucial to keeping everything in order and avoiding confusion.
 - **Continued Learning:** The world of web development is constantly evolving, and there is always something new to learn. Continuously updating skills and knowledge is vital to staying relevant in the industry.
 
-##Assets and Resources
+## Assets and Resources
 I used various assets and resources to create this web portfolio, including:
 
 - **Frameworks:** I used the Bootstrap framework for the design and layout of the website.
