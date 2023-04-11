@@ -1,93 +1,97 @@
 :root {
-    --bs-primary: #5A7830;
-    --bs-secondary: #FFC0CB;
-    --bs-success: #EBA83F;
-    --bs-info: #B9E3F3;
-    --bs-dark: #00594F;
-  }
+  --bs-primary: #5A7830;
+  --bs-secondary: #FFC0CB;
+  --bs-success: #EBA83F;
+  --bs-info: #B9E3F3;
+  --bs-dark: #00594F;
+}
   
 body {
-    font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
   
 h1, h2 {
-    font-family: 'Averia Serif Libre', cursive;
+  font-family: 'Averia Serif Libre', cursive;
 }
   
 .skip-links a {
-    background: var(--bs-primary);
-    color:white;
-    height: 2em;
-    left: 50%;
-    padding: 8px;
-    position: absolute;
-    transform: translateY(-150%);
-    /* transition: transform 0.3s; */
-    text-decoration: none;
-    font-size: 1.2em;
+  background: var(--bs-primary);
+  color:white;
+  height: 2em;
+  left: 50%;
+  padding: 8px;
+  position: absolute;
+  transform: translateY(-150%);
+  /* transition: transform 0.3s; */
+  text-decoration: none;
+  font-size: 1.2em;
 }
   
 .skip-links a:focus {
-    transform: translateY(0%);
+  transform: translateY(0%);
 }
   
 /* ==================== Navigation Bar ==================== */
   
 .navbar-nav li {
-    margin-right: 15px; 
+  margin-right: 15px; 
 }
   
 /* Nav link styles */
 .navbar-nav .nav-link,
 .navbar-nav .nav-link:visited {
-    color: white;
-    font-size: 1.2rem;
-    font-weight: bolder;
-    transition: border-bottom 0.2s ease-in-out;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  transition: border-bottom 0.2s ease-in-out;
 }
   
 /* Nav link hover styles */
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link:active {
-    color: white;
-    border-bottom: 2px solid white;
+  color: white;
+  border-bottom: 2px solid white;
 }
   
 /* Active nav link styles */
 .navbar-nav .nav-link.active {
-    color: white;
-    border-bottom: 2px solid white;
+  color: white;
+  border-bottom: 2px solid white;
 }
   
 /* Style contact button */
 .btn {
-    background-color: var(--bs-primary);
-    color: #fff;
-    padding: 5px 10px;
-    font-size: 1.2rem;
-    font-weight: bolder;
-    outline: none; /* Remove outline */
-    transition: background-color 0.1s ease-in-out;
-    cursor: pointer;
+  background-color: var(--bs-primary);
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  outline: none; /* Remove outline */
+  transition: background-color 0.1s ease-in-out;
+  cursor: pointer;
 }
   
 .btn:hover, 
 .btn:active { /* Use these classes to apply styles on hover and click */
-    background-color: white;
-    color: var(--bs-primary);
-    text-decoration: none;
-    box-shadow: none;
+  background-color: white;
+  color: var(--bs-primary);
+  text-decoration: none;
+  box-shadow: none;
 }
   
 /* ==================== Background image ==================== */
   
 .cloud-bg {
-    background-image: url(../images/background/cloud-bg.png);
-    background-size: cover;
-    background-position: center center;
-    /* padding-top: 20px; */
-    height: 100vh;
-    position: relative;
+  background-image: url(../images/background/cloud-bg.png);
+  background-size: cover;
+  background-position: center center;
+  /* padding-top: 20px; */
+  height: 100vh;
+  position: relative;
+}
+
+lottie-player {
+  margin-top: 50px
 }
   
   
