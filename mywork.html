@@ -23,16 +23,16 @@
         <a class="sr-only sr-only-focusable" href="#footer" aria-label="Skip to footer" role="contentinfo">Skip to Footer</a>
     </div>    
     <!--end Skip-links-->
-
-    <header aria-label="Site Header">
+  
+    <header role="banner">
         <div class="container">
-            <nav id="nav" class="navbar navbar-expand-md">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html"><img src="images/logo/logo.png" alt="logo" height="80"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
-                    aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
+        <nav id="nav" role="navigation" aria-label="Site Navigation">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="images/logo/logo.png" alt="logo" height="80"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                  aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarToggler">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -49,12 +49,12 @@
                         </li>
                     </ul>
                 </div><!--End collapse-->
-                </div><!--End container fluid-->
-            </nav>
+            </div><!--End container fluid-->
+        </nav>
         </div><!--End container-->
     </header>
 
-    <main id="main">
+    <main id="main" role="main">
     <section class="mywork-intro">
         <div class="container">
             <div class="row">
@@ -69,7 +69,9 @@
                 </div>
 
                 <div class="col-md-6" style="display: flex; justify-content: center;">
-                    <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_DACRJe6U8R.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+                    <div role="img" aria-label="Animation of the designer's work" aria-describedby="animation-description">
+                        <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_DACRJe6U8R.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+                    </div>
                 </div>
             </div>
         </div>
@@ -91,7 +93,7 @@
                     <div class="card-body">
                         <h3 class="fw-bold card-title">Three Star Media Website</h3>
                         <p class="card-text">Web Development I</p>
-                        <a href="#" class="btn btn-card" data-bs-toggle="modal" data-bs-target="#web1Modal">Learn More</a>
+                        <a href="#" class="btn btn-card" data-bs-toggle="modal" data-bs-target="#web1Modal" aria-label="Learn more about the Three Star Media Website">Learn More</a>
                     </div>
                     </div>
                 </div>
@@ -160,13 +162,13 @@
                                         </picture>
                                     </div>
                                 </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#HPCarousel" data-bs-slide="prev">
+                                <button class="carousel-control-prev" type="button" data-bs-target="#HPCarousel" data-bs-slide="prev" tabindex="0" aria-label="Previous slide" role="button">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
+                                    <span class="visually-hidden">Previous slide</span>
                                 </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#HPCarousel" data-bs-slide="next">
+                                <button class="carousel-control-next" type="button" data-bs-target="#HPCarousel" data-bs-slide="next" tabindex="0" aria-label="Next slide" role="button">
                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
+                                    <span class="visually-hidden">Next slide</span>
                                 </button>
                             </div><!--end Carousel-->
                             <div class="card-body">
@@ -179,7 +181,7 @@
                 </div>
 
                 <!-- Web Dev 2 Modal -->
-                <div class="modal fade" id="web2Modal" tabindex="-1" aria-labelledby="web2Modaldetail" aria-hidden="true">
+                <div class="modal fade" id="web2Modal" tabindex="-1" aria-labelledby="web2Modaldetail" aria-hidden="true" role="dialog">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -224,7 +226,7 @@
                 </div>
 
                 <!-- Avatar Icon Modal -->
-                <div class="modal fade" id="avatarModal" tabindex="-1" aria-labelledby="avatarModaldetail" aria-hidden="true">
+                <div class="modal fade" id="avatarModal" tabindex="-1" aria-labelledby="avatarModaldetail" aria-hidden="true" role="dialog">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -279,7 +281,7 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="fw-bold modal-title" id="brandingModaldetail">Branding Design</h5>
+                                <h5 id="brandingModaldetail" class="fw-bold modal-title">Branding Design</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
@@ -309,14 +311,14 @@
     </section>
     </main>
 
-    <footer id="footer" class="fbg-image">
+    <footer id="footer" class="fbg-image" role="contentinfo">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <ul class="social-icons">
-                        <li><a href="https://www.facebook.com/MMook.ko5145"><i class="bi bi-facebook"></i></a></li>
-                        <li><a href="https://www.instagram.com/butwhatshouldidotoday__/"><i class="bi bi-instagram"></i></a></li>
-                        <li><a href="https://github.com/Krit0016"><i class="bi bi-github"></i></a></li>
+                    <ul class="social-icons" aria-label="Social media links">
+                        <li><a href="https://www.facebook.com/MMook.ko5145"><i class="bi bi-facebook"></i><span class="visually-hidden">Facebook</span></a></li>
+                        <li><a href="https://www.instagram.com/butwhatshouldidotoday__/"><i class="bi bi-instagram"></i><span class="visually-hidden">Instagram</span></a></li>
+                        <li><a href="https://github.com/Krit0016"><i class="bi bi-github"></i><<span class="visually-hidden">Github</span></a></li>
                     </ul>
                 </div>
                 <div class="col-md-6 text-md-end text-white">

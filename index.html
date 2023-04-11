@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="css/index.css">
 
     </head>
+    
 <body>
     <!-- skip links -->
     <div class="skip-links">
@@ -23,64 +24,66 @@
     <!--end Skip-links-->
 
     <div class="cloud-bg">
-        <header aria-label="Site Header">
+        <header role="banner">
             <div class="container">
                 <nav id="nav" class="navbar navbar-expand-md">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="index.html"><img src="images/logo/logo.png" alt="logo" height="80"></a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
-                        aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                            aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
                         </button>
-                    <div class="collapse navbar-collapse" id="navbarToggler">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="mywork.html">MY WORK</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">ABOUT ME</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="btn rounded" href="contact.html" role="button">CONTACT ME</a>
-                            </li>
-                        </ul>
-                    </div><!--End collapse-->
+                        <div class="collapse navbar-collapse" id="navbarToggler">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="index.html">HOME</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="mywork.html">MY WORK</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">ABOUT ME</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="btn rounded" href="contact.html" role="button">CONTACT ME</a>
+                                </li>
+                            </ul>
+                        </div><!--End collapse-->
                     </div><!--End container fluid-->
                 </nav>
             </div><!--End container-->
         </header>
 
-        <main id="main">
+        <main id="main" role="main">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 order-2 order-md-1">
-                        <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_s5JXxH8qKY.json"  background="transparent" speed="1" loop autoplay role="img" aria-label="Animated graphic">
-                        </lottie-player>
+                        <div role="img" aria-label="Animated graphic" aria-hidden="true">
+                            <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_s5JXxH8qKY.json" background="transparent" speed="1" loop autoplay>
+                            </lottie-player>
+                        </div>
                     </div>
                     <div class="col-md-6 order-1 order-md-2 mb-2">
                         <h1 class="text-white">
-                            Hi, my name is Orranis.
-                            <br>
-                            I'm a UX designer 
-                            currently studying at Algonquin College
+                        Hi, my name is Orranis.
+                        <br>
+                        I'm a UX designer currently studying at Algonquin College
                         </h1>
                         <br>
                         <blockquote class="blockquote text-white">
-                            <p class="mb-5">“Elevating ideas, and transforming concepts with creative design.”</p>
+                        <p class="mb-5">“Elevating ideas, and transforming concepts with creative design.”</p>
                         </blockquote>
-                        <button class="btn main-button rounded" onclick="window.location.href='contact.html';">Get in touch</button>
-                        <button class="btn main-button rounded" onclick="window.location.href='mywork.html';">View all works</button>
+                        <a class="btn main-button rounded" href="contact.html">Get in touch</a>
+                        <a class="btn main-button rounded" href="mywork.html">View all works</a>
                     </div>
                 </div>
             </div>
-        </main>        
-        
+        </main>
+
     </div><!--End cloud-bg-->
         
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
 </body>
 </html>

@@ -83,23 +83,23 @@
                   
                     <div class="col-md-9 order-first order-md-2">
                         <h2 class="h1 fw-bold">Interested In Working Together?</h2>
-                        <h3 class="h1 fw-bold mb-5 ">Let's Connect.</h3>
+                        <h3 class="h1 fw-bold mb-5">Let's Connect.</h3>
                         <form method="post" action="send-email.php" class="mx-auto">
                             <div class="mb-3">
                                 <label for="name" class="form-label">Name</label>
-                                <input type="text" class="form-control" id="name" name="name">
+                                <input type="text" class="form-control" id="name" name="name" required>
                             </div>
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="email" name="email">
+                                <input type="email" class="form-control" id="email" name="email" required>
                             </div>
                             <div class="mb-3">
                                 <label for="subject" class="form-label">Subject</label>
-                                <input type="text" class="form-control" id="subject" name="subject">
+                                <input type="text" class="form-control" id="subject" name="subject" required>
                             </div>
                             <div class="mb-3">
                                 <label for="message" class="form-label">Message</label>
-                                <textarea class="form-control" id="message" rows="5" name="message"></textarea>
+                                <textarea class="form-control" id="message" rows="5" name="message" required></textarea>
                             </div>
                             <div>
                                 <button type="submit" class="btn btn-primary" name="submit">Submit</button>
@@ -111,14 +111,14 @@
         </section>
     </main>
 
-    <footer id="footer" class="fbg-image">
+    <footer id="footer" class="fbg-image" role="contentinfo">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <ul class="social-icons">
-                        <li><a href="https://www.facebook.com/MMook.ko5145"><i class="bi bi-facebook"></i></a></li>
-                        <li><a href="https://www.instagram.com/butwhatshouldidotoday__/"><i class="bi bi-instagram"></i></a></li>
-                        <li><a href="https://github.com/Krit0016"><i class="bi bi-github"></i></a></li>
+                    <ul class="social-icons" aria-label="Social media links">
+                        <li><a href="https://www.facebook.com/MMook.ko5145"><i class="bi bi-facebook"></i><span class="visually-hidden">Facebook</span></a></li>
+                        <li><a href="https://www.instagram.com/butwhatshouldidotoday__/"><i class="bi bi-instagram"></i><span class="visually-hidden">Instagram</span></a></li>
+                        <li><a href="https://github.com/Krit0016"><i class="bi bi-github"></i><<span class="visually-hidden">Github</span></a></li>
                     </ul>
                 </div>
                 <div class="col-md-6 text-md-end text-white">
