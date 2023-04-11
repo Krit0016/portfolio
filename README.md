@@ -8,24 +8,25 @@ This portfolio website was created as a showcase of my skills, projects, and exp
 - **Image Organization:** I filled the images folder with all the planned pictures and organized them into folders. I also formatted the images into minimum two sizes for optimal loading time and display.
 - **Coding for General Style:** I created the general style of the website using HTML, CSS, and Bootstrap framework.
 
-## Challenges
-During development, I faced a few challenges such as:
+## Challenges and Solutions
+Throughout the development process, several challenges were faced, including:
 
-- **Learning Bootstrap Framework:** I had to spend some time learning how to use Bootstrap effectively to ensure a responsive and visually appealing design.
-- **Meeting Accessibility Standards:** I realized at some point that I had missed out on some accessibility standards, so I had to go back and make necessary changes.
-- **Creating a contact form that sends emails directly to my inbox:** I had to learn how to use PHP to create a contact form that sends emails directly to my email.
+- **Bootstrap Framework:** The use of the Bootstrap framework was new and presented a steep learning curve. Solution: To overcome this, extensive research was conducted and Bootstrap tutorials were followed to help in understanding and using the framework effectively.
+- **Accessibility Standards:** Ensuring the site met accessibility standards was overlooked initially. Solution: To overcome this, tools like WAVE were used to test for accessibility and guidelines were followed to make necessary changes.
+- **Contact Form:** The contact form needed to send messages directly to my email address. Solution: Research was conducted to find a suitable and secure way to make the contact form send messages directly to my email address.
 
 ## Lessons Learned
 Through creating this web portfolio, I have learned the importance of:
 
-- **Planning and Organization:** Having a plan and an organized folder structure is crucial to keeping everything in order and avoiding confusion.
-- **Continued Learning:** The world of web development is constantly evolving, and there is always something new to learn. Continuously updating skills and knowledge is vital to staying relevant in the industry.
+- **Design Principles:** The process of designing a website and following design principles helped in creating a visually appealing and organized portfolio site.
+- **Coding Techniques:** The use of HTML, CSS, and Bootstrap provided valuable experience in coding techniques and how to use them to create a functional website.
+- **Problem-Solving Skills:** Developing this website helped in honing problem-solving skills through the various challenges faced during development.
 
 ## Assets and Resources
 I used various assets and resources to create this web portfolio, including:
 
 - **Frameworks:** I used the Bootstrap framework for the design and layout of the website.
-- **CSS Libraries:** I used Font Awesome for icons and Animista for animations.
+- **Libraries:** [Font Awesome](https://fontawesome.com/) and [Animista](https://animista.net/)
 - **Fonts:** I used the Google Font "Averia Serif Libre" for headings and "Poppins" for body text.
 - **Images:** I used a background image from Pexels, which can be found [here](https://www.pexels.com/photo/a-cloudy-sky-6662557/)
 - **Animations:** I used animations from Lottiefiles for the flying birds, which can be found [here](https://lottiefiles.com/124864-flying-bird), and the working woman, which can be found [here](https://lottiefiles.com/122259-working-woman).
